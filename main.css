@@ -1,0 +1,48 @@
+::-webkit-input-placeholder { color: #FFFFFF; } /* Chrome, Safari, Opera */
+::-moz-placeholder { color: #FFFFFF; opacity: 1; } /* Firefox 19+ */
+:-ms-input-placeholder { color: #FFFFFF; } /* IE 10-11 */
+:-moz-placeholder { color: #FFFFFF; opacity: 1; } /* Firefox 18- */
+
+.activity_toppic{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.search_main{
+    margin-top: 15rem;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.activity_search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.activity_search svg{
+    position: relative;
+    left: 2.5rem;
+}
+
+.activity_search #findTitleBlock{
+    padding: 10px 16px 10px 35px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    color: #FFFFFF;
+    border: 1px solid #444444;
+}
+
+.activity_search #submitFindTitleBlock{
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    border: 1px solid #444444;
+    cursor: pointer;
+}
+
+
+.main_detail{
+    min-height: 25rem;
+}
