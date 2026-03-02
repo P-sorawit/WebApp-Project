@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="navbar.css">
-    <title>main_guest</title>
-</head>
-
-<body>
+export function generatedNavbar() {
+    const navbar = `
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <a href="main_guest.html">
+                <a href="../main/main.html">
                     <img src="https://lh3.googleusercontent.com/d/1WYLZOzQQMg7YrPJY8_3AeAsmc5JWCE0Z" alt="Logo">
                 </a>
             </div>
             <input type="checkbox" id="check_nav">
             <label for="check_nav" class="menu_icon">
-                <svg id="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <svg id="open" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 24 24">
                     <path d="M3 5h18v2H3zm0 6h18v2H3zm0 6h18v2H3z"></path>
                 </svg>
-                <svg id="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <svg id="close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 24 24">
                     <path
                         d="m7.76 14.83-2.83 2.83 1.41 1.41 2.83-2.83 2.12-2.12.71-.71.71.71 1.41 1.42 3.54 3.53 1.41-1.41-3.53-3.54-1.42-1.41-.71-.71 5.66-5.66-1.41-1.41L12 10.59 6.34 4.93 4.93 6.34 10.59 12l-.71.71z">
                     </path>
@@ -32,16 +25,18 @@
                     <li><a href="#">Post</a></li>
                     <li><a href="#">My activity</a></li>
                     <li><a href="#">Notification</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="../profile/profile.html">Profile</a></li>
+                    <li><a href="../main_guest/main_guest.html">Log out</a></li>
                 </ul>
-                <br>
-                <div class="auth-buttons">
-                    <a href="sign_in.html" class="btn-signin">Sign in</a>
-                    <a href="sign_up.html" class="btn-register">Sign up</a>
-                </div>
             </div>
         </div>
     </nav>
-</body>
+  `;
+    const link = document.createElement("link")
+    link.href ="../../styles/navbar.css"
+    link.rel = "stylesheet"
+    document.querySelector("head").appendChild(link)
+    document.querySelector("nav").innerHTML = navbar;
 
-</html>
+
+}
