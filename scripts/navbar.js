@@ -33,10 +33,8 @@ export function generatedNavbar() {
     </nav>
   `;
     const link = document.createElement("link")
-    link.href ="../../styles/navbar.css"
+    link.href = "../../styles/navbar.css"
     link.rel = "stylesheet"
     document.querySelector("head").appendChild(link)
     document.querySelector("nav").innerHTML = navbar;
-
-
 }
