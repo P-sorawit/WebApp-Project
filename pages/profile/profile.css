@@ -11,27 +11,24 @@
 .photo_rating_info {
   color: #ffff;
   text-align: center;
-  width: 30%;
+  width: 35%;
   justify-content: center;
 }
 
 .personal_info {
   color: #ffff;
-  width: 70%;
+  width: 65%;
 }
 
 .photo_rating_info img {
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 #img_container h1 {
   font-size: 3rem;
-}
-
-#img_container img {
-  object-fit: cover;
 }
 
 #img_container #rating {
@@ -77,3 +74,32 @@
 #save-btn {
   display: none;
 }
+
+@media (max-width: 768px){
+  .frame_profile{
+    flex-direction: column;
+    padding: 1rem 2.5rem 2rem 2.5rem;
+  }
+
+  .photo_rating_info{
+    width: 100%;
+  }
+
+  .personal_info{
+    width: 100%;
+  }
+
+  .photo_rating_info button{
+    width: 100%;
+  }
+
+  .personal_info p{
+    margin: 1.5rem 0rem 0.5rem 0rem;
+  }
+
+  .photo_rating_info img {
+    width: 13rem;
+    height: 13rem;
+  }
+}
+
