@@ -2,4 +2,77 @@
     display: flex;
     justify-content: center;
     margin: 5rem;
+    background-color: #1E1E1E;
+    border-radius: 6px;
+    border: 1px solid;
+    padding: 1rem;
+}
+
+.photo_rating_info{
+    color: #FFFF;
+    text-align: center;
+    width: 30%;
+    justify-content: center;
+}
+
+.personal_info{
+    color: #FFFF;
+    width: 70%;
+}
+
+.photo_rating_info img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+
+}
+
+#img_container h1{
+    font-size: 3rem;
+}
+
+#img_container img{
+    object-fit: cover;
+}
+
+#img_container #rating{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1.5rem 0rem;
+    width: 100%;
+}
+
+#img_container #rating #star{
+    color: #5A68FF;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+#point_frame h3 {
+    margin: 0;
+    line-height: 2rem;
+}
+
+.personal_info input, .personal_info #About{
+    width: 98%;
+    background-color: #404040;
+    color: #bbb8b8;
+    border: 1px solid black ;
+    padding: 6px;
+}
+
+    .photo_rating_info button{
+        width: 65%;
+        background-color: #5A68FF;
+        color: #FFFF;
+        border-radius: 6px;
+        border: 1px solid;
+        cursor: pointer;
+        border-color: #5A68FF;
+        height: 2rem;
+    }
+
+#save-btn{
+    display: none;
 }
