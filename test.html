@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Card</title>
+    <style>
+        :root {
+            --primary: #4a90e2;
+            --bg: #f4f7f6;
+            --card-bg: #ffffff;
+        }
 
+        body { font-family: 'Segoe UI', sans-serif; background: var(--bg); display: flex; justify-content: center; padding: 40px; }
+        
+        .card { 
+            background: var(--card-bg); 
+            width: 100%; 
+            max-width: 400px; 
+            border-radius: 15px; 
+            padding: 30px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .profile-img { width: 100px; height: 100px; border-radius: 50%; background: #ddd; margin-bottom: 15px; }
+
+        h2 { margin: 10px 0; color: #333; }
+        p { color: #666; margin-bottom: 20px; }
+
+        /* Form styling */
+        .edit-fields { display: none; flex-direction: column; gap: 10px; margin-bottom: 20px; }
+        input { padding: 10px; border: 1px solid #ddd; border-radius: 5px; }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-edit { background: var(--primary); color: white; }
+        .btn-save { background: #27ae60; color: white; display: none; }
+        .btn:hover { opacity: 0.8; }
+    </style>
 </head>
 <body>
-  <script type="module">
-    import { generatedNavbar } from "./navbar.js";
-    generatedNavbar();
-  </script>
 
+<div class="card">
+    <img src="https://via.placeholder.com/100" alt="Avatar" class="profile-img">
+    
+    <div id="view-mode">
+        <h2 id="display-name">Alex Smith</h2>
+        <p id="display-bio">Full Stack Developer & Coffee Enthusiast</p>
+    </div>
+
+    <div id="edit-mode" class="edit-fields">
+        <input type="text" id="input-name" value="Alex Smith">
+        <input type="text" id="input-bio" value="Full Stack Developer & Coffee Enthusiast">
+    </div>
+
+    <button id="edit-btn" class="btn btn-edit" onclick="toggleEdit()">Edit Profile</button>
+    <button id="save-btn" class="btn btn-save" onclick="saveProfile()">Save Changes</button>
+</div>
+
+<script>
+    function toggleEdit() {
+        document.getElementById('view-mode').style.display = 'none';
+        document.getElementById('edit-mode').style.display = 'flex';
+        document.getElementById('edit-btn').style.display = 'none';
+        document.getElementById('save-btn').style.display = 'inline-block';
+    }
+
+    function saveProfile() {
+        // Get values from inputs
+        const newName = document.getElementById('input-name').value;
+        const newBio = document.getElementById('input-bio').value;
+
+        // Update display
+        document.getElementById('display-name').innerText = newName;
+        document.getElementById('display-bio').innerText = newBio;
+
+        // Switch back to view mode
+        document.getElementById('view-mode').style.display = 'block';
+        document.getElementById('edit-mode').style.display = 'none';
+        document.getElementById('edit-btn').style.display = 'inline-block';
+        document.getElementById('save-btn').style.display = 'none';
+    }
+</script>
 
 </body>
 </html>

@@ -10,6 +10,18 @@
 </head>
 
 <body>
+    <script>
+        function toggleEdit(){
+            document.getElementById('edit-btn').style.display = 'none';
+            document.getElementById('save-btn').style.display = 'block';
+            document.getElementById('Username').readOnly = false;
+            document.getElementById('Username').readOnly = false;
+        }
+        function saveProfile(){
+            document.getElementById('edit-btn').style.display = 'block';
+            document.getElementById('save-btn').style.display = 'none';
+        }
+    </script>
     <nav></nav>
     <div class="frame_profile">
         <div class="photo_rating_info">
@@ -31,7 +43,7 @@
 
                 </div>
             </div>
-            <button id="edit-btn" class="btn btn-edit" onclick="toggleEdit()">Edit Profile</button><br>
+            <button id="edit-btn" class="btn btn-edit" onclick="toggleEdit()">Edit Profile</button>
             <button id="save-btn" class="btn btn-save" onclick="saveProfile()">Save Changes</button>
         </div>
         <div class="personal_info">

@@ -71,6 +71,7 @@
   cursor: pointer;
   border-color: #5a68ff;
   height: 2rem;
+  margin: auto;
 }
 
 #save-btn {
