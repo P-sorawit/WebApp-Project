@@ -52,3 +52,54 @@ function saveProfile() {
     document.getElementById('edit-btn').style.display = 'block';
     document.getElementById('save-btn').style.display = 'none';
 }
+
+function setStar(){
+    const rating = parseInt(1);
+    const star1 = document.getElementById('po1');
+    const star2 = document.getElementById('po2');
+    const star3 = document.getElementById('po3');
+    const star4 = document.getElementById('po4');
+    const star5 = document.getElementById('po5');
+    if(rating === 5){
+        star1.style.color = '#5a68ff';
+        star2.style.color = '#5a68ff';
+        star3.style.color = '#5a68ff';
+        star4.style.color = '#5a68ff';
+        star5.style.color = '#5a68ff';
+    }else if(rating === 4){
+        star1.style.color = '#5a68ff';
+        star2.style.color = '#5a68ff';
+        star3.style.color = '#5a68ff';
+        star4.style.color = '#5a68ff';
+        star5.style.color = '#ffff';
+    }else if(rating === 3){
+        star1.style.color = '#5a68ff';
+        star2.style.color = '#5a68ff';
+        star3.style.color = '#5a68ff';
+        star4.style.color = '#ffff';
+        star5.style.color = '#ffff';
+    }else if(rating === 2){
+        star1.style.color = '#5a68ff';
+        star2.style.color = '#5a68ff';
+        star3.style.color = '#ffff';
+        star4.style.color = '#ffff';
+        star5.style.color = '#ffff';
+    }else if(rating === 1){
+        star1.style.color = '#5a68ff';
+        star2.style.color = '#ffff';
+        star3.style.color = '#ffff';
+        star4.style.color = '#ffff';
+        star5.style.color = '#ffff';
+    }else{
+        star1.style.color = '#ffff';
+        star2.style.color = '#ffff';
+        star3.style.color = '#ffff';
+        star4.style.color = '#ffff';
+        star5.style.color = '#ffff';
+    }
+}
+
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    setStar();
+});
