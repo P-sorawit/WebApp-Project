@@ -45,9 +45,9 @@ function saveProfile() {
             return;
         }
         element.readOnly = true;
-        element.style.borderColor = "black";
-        element.style.color = "#bbb8b8";
-        element.style.backgroundColor = "#404040";
+        element.style.borderColor = "rgba(255, 255, 255, 0.624)";
+        element.style.color = "#ffffff";
+        element.style.backgroundColor = "#97a6e445";
     }
     document.getElementById('edit-btn').style.display = 'block';
     document.getElementById('save-btn').style.display = 'none';
