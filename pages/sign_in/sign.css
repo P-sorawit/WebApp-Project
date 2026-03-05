@@ -1,7 +1,7 @@
 .frame_sign{
     display: flex;
     justify-content: center;
-    margin: 5rem;
+    margin: 12rem 10rem;
 }
 
 @media (max-width: 950px){

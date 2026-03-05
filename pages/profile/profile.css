@@ -6,7 +6,7 @@
   border-radius: 20px;
   padding: 1rem;
   box-shadow: -2px 1px 7px 7px rgba(49, 47, 47, 0.171), rgba(169, 169, 169, 0.526) 0px 2px 4px 0px inset;
-  gap: 2%;
+  /* gap: 2%; */
 }
 
 .photo_rating_info {
@@ -20,6 +20,7 @@
 .personal_info {
   color: #ffff;
   width: 65%;
+  padding: 1rem 2.5rem 2rem 2.5rem;
 }
 
 .photo_rating_info img {
@@ -62,6 +63,7 @@
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.624);
   padding: 6px;
+  
 }
 
 .photo_rating_info button {
@@ -87,7 +89,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .frame_profile {
     flex-direction: column;
     padding: 1rem 2.5rem 2rem 2.5rem;
@@ -99,6 +101,8 @@
 
   .personal_info {
     width: 100%;
+    padding: 1rem 0rem 2rem 0rem;
+
   }
 
   .photo_rating_info button {
