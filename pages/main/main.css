@@ -5,17 +5,63 @@ body {
         linear-gradient(90deg, #12002b 0%, #1b1464 40%, #1f2b8f 70%, #273a86 100%);
 }
 
+
+.search_main{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.activity_search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.activity_search svg{
+    position: relative;
+    left: 2.5rem;
+}
+
+#findTitleBlock{
+    padding: 14px 16px 14px 35px;
+    background-color: #190f5f;
+    border-radius: 30px;
+    color: #FFFFFF;
+    border: 1px solid #cfbeff;
+}
+
+#submitFindTitleBlock{
+    border: 1px solid #5b7cfa;
+    color: #5b7cfa;
+    padding: 14px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(91,124,250,0.3);
+}
+
+#submitFindTitleBlock:hover {
+    background: #5b7cfa;
+    color: white;
+}
+
 /*  --------- HERO -------- */
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 8%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10%;
     overflow: hidden;
+    align-items: center;
 }
 
 .hero-text {
-    width: 45%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-text h1 {
@@ -30,7 +76,6 @@ body {
 .hero-text h2 {
     font-size: 150%;
     font-weight: 600;
-    margin-bottom: 20px;
     color: #ececec;
     line-height: 1.2;
 }
@@ -38,7 +83,7 @@ body {
 .hero-text p {
     font-size: 100%;
     color: #a3acc4;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .hero-buttons a {
