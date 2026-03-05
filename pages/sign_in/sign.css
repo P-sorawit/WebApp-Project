@@ -4,7 +4,7 @@
     margin: 5rem;
 }
 
-@media (max-width: 768px){
+@media (max-width: 950px){
     .frame_sign{
         margin: 4rem;
     }
@@ -24,8 +24,10 @@
     background-color: #fff;
     width: 32rem;
     height: 32rem;
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 20px 0px 0px 20px;
     border: 2px 2px 2px 0px solid;
+    box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1);
+
 }
 
 .frame_sign #photo img{
@@ -35,20 +37,23 @@
 }
 
 .frame_sign #info{
-    padding: 1rem;
+    padding: 2rem;
     background-color: #1E1E1E;
     width: 32rem;
-    height: 32rem;
+    height: 30rem;
     color: #fff;
     border: 2px 0px 2px 2px solid;
-    border-radius: 0px 6px 6px 0px;
+    border-radius: 0px 20px 20px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1);
+
 }
 
 .frame_sign #info div{
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .frame_sign #info form input{
@@ -57,6 +62,8 @@
     border-radius: 6px;
     width: 100%;
     box-sizing: border-box;
+    
+    
 }
 
 .frame_sign #info form #submitSign, .frame_sign #info form #submitForGotpass{
@@ -70,6 +77,7 @@
 .ask_sign a{
     cursor: pointer;
     color: gray;
+
 }
 
 .ask_sign #showpass input[type="checkbox"]{
