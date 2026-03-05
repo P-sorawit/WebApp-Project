@@ -4,33 +4,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
-    <title>main</title>
+    <link rel="stylesheet" type="text/css" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="main_guest.css">
+    <title>main_guest</title>
 </head>
 
 <body>
-    <nav></nav>
-    <div class="main_detail">
-        <div class="search_main">
-            <H1 class="activity_toppic">Activity</H1>
-            <form class="activity_search" action="" method="post">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
-                    <path
-                        d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6">
-                    </path>
-                </svg>
-                <input type="text" id="findTitleBlock" name="findTitleBlock" placeholder="Seach Post">
-                <input type="submit" id="submitFindTitleBlock" name="submitFindTitleBlock" value="Find Post">
-            </form>
+    <nav>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>An App for Finding Friends and Activity Partners</h1>
+            <p>Nowadays, many people want to participate in activities such as exercising, traveling, playing sports, studying, or joining hobby groups. However, they often do not have friends who share the same interests or have matching schedules. As a result, they may miss opportunities or feel uncomfortable doing activities alone. This application is designed to solve that problem by helping users connect with others who share similar interests and are looking to join activities together.</p>
+            <h2>Find Your People. Do What You Love.</h2>
+
+            <div class="hero-buttons">
+                <a href="sign_up.html" class="btn-primary">Get Started</a>
+                <a href="sign_in.html" class="btn-outline">Already have account</a>
+            </div>
         </div>
-    </div>
+
+        <div class="hero-image">
+            <img src="https://start.docuware.com/hs-fs/hubfs/3%20Way%20Invoice%20Matching/financial%20work%20optimization%20with%20effective%20automated%20tools%20for%20audit%2C%20payments%20and%20business%20analysis.jpg?width=600&height=400&name=financial%20work%20optimization%20with%20effective%20automated%20tools%20for%20audit%2C%20payments%20and%20business%20analysis.jpg">
+        </div>
+    </section>
+
+    <!-- <section class="description">
+        <div class="description-content">
+            <p>Nowadays, many people want to participate in activities such as exercising, traveling, playing sports, studying, or joining hobby groups. However, they often do not have friends who share the same interests or have matching schedules. As a result, they may miss opportunities or feel uncomfortable doing activities alone. This application is designed to solve that problem by helping users connect with others who share similar interests and are looking to join activities together.</p>
+        </div>
+    </section> -->
+
+    
+
+    <!-- FEATURE -->
+    <section class="feature">
+        <h2>Our Features</h2>
+        <div class="feature-content">
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="../../assets/search.png">
+                    </div>  
+                    <br>                 
+                    <div class="feature-data"> Activity Search System</div>
+                    <p>Users can search for activities based on:</p>
+                    <ul class="data-list">
+                        <li>Type of activity</li>
+                        <li>Location</li>
+                        <li>Date and time</li>
+                        <li>Number of participants</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="../../assets/exercise.png">
+                    </div>
+                    <br>  
+                    <div class="feature-data">Create an Activity</div>
+                    <p>Users can:</p>
+                    <ul class="data-list">
+                        <li>Create posts to invite others</li>
+                        <li>Set details such as time, location, and participant limit</li>
+                        <li>Specify skill level (beginner, intermediate, advanced)</li>
+                        <li>Asking Question</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="../../assets/messenger.png">
+                    </div>
+                    <br>  
+                    <div class="feature-data">Chat System</div>
+                    <p>Participants can communicate to discuss plans and details before meeting.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-image">
+                        <img src="../../assets/rating.png">
+                    </div>
+                    <br>  
+                    <div class="feature-data">Review and Rating System</div>
+                    <p>Users can rate each other after completing activities to build trust and ensure safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES -->
+    <section class="advantages">
+        <div class="adv-left">
+            <h1>Key Advantages</h1>
+            <p>Why choose our app? Here’s what makes us different and better.</p>
+            <br>
+        </div>
+
+        <!-- ฝั่งขวา 60% -->
+        <div class="adv-right">
+            <div class="adv-card">
+                <h1>Focuses on finding activity partners, not dating</h1>
+            </div>
+            <div class="adv-card">
+                <h1>Connects people through shared interests</h1>
+            </div>
+            <div class="adv-card">
+                <h1>Encourages real-life social interaction</h1>
+            </div>
+            <div class="adv-card">
+                <h1>Simple and user-friendly design</h1>
+            </div>
+        </div>
+
+    </section>
+
     <script type="module">
         import { generatedNavbar } from "../../scripts/navbar.js";
-            generatedNavbar();
+            generatedNavbar(true);
     </script>  
+
 </body>
 
 </html>
