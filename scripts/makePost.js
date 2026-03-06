@@ -19,7 +19,7 @@ export function haddleMakePost(){
         container.innerHTML=""
     })
 
-
+  
     const button = document.getElementById("makePost")
     button.addEventListener("click",()=>{
         let questions =[]

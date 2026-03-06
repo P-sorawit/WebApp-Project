@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="post.css">
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <title>main</title>
+</head>
+
+<body>
+    <nav></nav>
+    <div class="page">
+        <div class="search_main">
+            <form class="activity_search" action="" method="post">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                    <!-- Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free -->
+                    <path
+                        d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6">
+                    </path>
+                </svg>
+                <input type="search" id="findTitleBlock" name="findTitleBlock" placeholder="Seach Post">
+                <input type="submit" id="submitFindTitleBlock" name="submitFindTitleBlock" value="Find Post">
+            </form>
+        </div>
+        <div class="add-post">
+            <img src="https://i.pravatar.cc/30?img=1">
+            <div>
+                <button id="makePost">Let's you make your post !</button>
+                <div id="makePostContainer"></div>
+            </div>
+            
+        </div>
+
+        <div id="all-post"></div>
+    </div>
+    <footer></footer>
+    <script type="module" src="../../scripts/post/post.js"></script>    
+    <script type="module">
+        import { generatedNavbar } from "../../scripts/navbar.js";
+        import { haddleMakePost } from "../../scripts/makePost.js";
+        import { generatedFooter } from "../../scripts/footer.js";
+            generatedNavbar(true);
+            haddleMakePost();
+            generatedFooter();
+    </script>
+</body>
+
+</html>

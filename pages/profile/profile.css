@@ -1,16 +1,19 @@
 .frame_profile {
   display: flex;
   justify-content: center;
-  margin: 5rem;
-  background-color: #1e1e1e;
-  border-radius: 6px;
+  margin: 9rem;
+  background: #97a6e445;
+  border-radius: 20px;
   padding: 1rem;
-  box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1);
+  box-shadow: -2px 1px 7px 7px rgba(49, 47, 47, 0.171), rgba(169, 169, 169, 0.526) 0px 2px 4px 0px inset;
+  /* gap: 2%; */
 }
 
 .photo_rating_info {
   color: #ffff;
+  text-shadow: 0 0px 25px #5A68FF;
   text-align: center;
+  font-weight: 800;
   width: 35%;
   justify-content: center;
 }
@@ -18,6 +21,7 @@
 .personal_info {
   color: #ffff;
   width: 65%;
+  padding: 1rem 2.5rem 2rem 2.5rem;
 }
 
 .photo_rating_info img {
@@ -25,6 +29,8 @@
   height: 10rem;
   border-radius: 50%;
   object-fit: cover;
+  box-shadow: rgba(42, 22, 113, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(169, 169, 169, 0.2) 0px 2px 4px 0px inset;
+  
 }
 
 #img_container h1 {
@@ -53,29 +59,38 @@
 .personal_info input,
 .personal_info #About {
   width: 98%;
-  background-color: #404040;
-  color: #bbb8b8;
-  border: 1px solid black;
+  background-color: #97a6e445;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.624);
   padding: 6px;
+  
 }
 
 .photo_rating_info button {
   width: 65%;
   background-color: #5a68ff;
   color: #ffff;
-  border-radius: 6px;
-  border: 1px solid;
+  border-radius: 30px;
+  border: 2px solid;
   cursor: pointer;
   border-color: #5a68ff;
   height: 2rem;
   margin: auto;
+  box-shadow: 0 10px 25px rgba(91,124,250,0.3);
+  transition: 0.3s ease;
 }
+
+.photo_rating_info button:hover {
+  transform: translateY(-3px);
+}
+
 
 #save-btn {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .frame_profile {
     flex-direction: column;
     padding: 1rem 2.5rem 2rem 2.5rem;
@@ -87,6 +102,8 @@
 
   .personal_info {
     width: 100%;
+    padding: 1rem 0rem 2rem 0rem;
+
   }
 
   .photo_rating_info button {

@@ -2,16 +2,21 @@
 
 body {
   margin: 0;
-  background-color: #2c2c2c;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Segoe UI', sans-serif;
+  background: 
+        radial-gradient(circle at 75% 50%, rgba(91,124,250,0.4), transparent 40%),
+        linear-gradient(90deg, #12002b 0%, #1b1464 40%, #1f2b8f 70%, #273a86 100%);
 }
 
 .navbar {
-  background-color: #1a1a1a;
+  background-color: #0b092b;
   color: white;
   padding: 1rem 2rem;
-  min-width: auto;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
 .container {
@@ -26,7 +31,7 @@ body {
   width: 60px;
   height: 60px;
 }
-
+my-post-container
 .nav-links {
   display: flex;
   align-items: center;
@@ -46,15 +51,16 @@ body {
   gap: 2rem;
 }
 
-.nav-links a {
-  color: #ccc;
+.menu a {
+  color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   transition: color 0.3s;
 }
 
-.nav-links a:hover {
-  color: white;
+.menu a:hover {
+  color: #9aa2ff;
+  text-shadow: 0 0px 25px #5A68FF;
 }
 
 .auth-buttons {
@@ -62,22 +68,43 @@ body {
   gap: 0.75rem;
 }
 
+.auth-buttons a{
+  text-decoration: none;
+}
+
 .btn-signin {
-  border: 1px solid #444444;
+  border: 1px solid white;
+  color: white;
   padding: 6px 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   background: transparent;
   font-weight: 500;
+  
+}
 
+.btn-signin:hover {
+  color: white;
+  background: #5b7cfa;
+  border: 1px solid #5b7cfa;
 }
 
 .btn-register {
   background-color: white;
-  color: black !important;
+  color: #0b092b;
   padding: 6px 16px;
-  border-radius: 8px;
+  border-radius: 20px;
   font-weight: 500;
+  transition: 0.3s ease;
+}
 
+.btn-register a{
+    color: #0b092b;
+}
+
+.btn-register:hover {
+  transform: translateY(-3px);
+  color: #5b7cfa;
+  box-shadow: 0 0px 40px rgba(93, 47, 232, 0.678);
 }
 
 .menu {
@@ -120,7 +147,7 @@ body {
     flex-direction: column;
     gap: 0;
     position: absolute;
-    background-color: #1a1a1a;
+    /* background-color: #1a1a1a; */
     top: 100%;
     left: 0;
     right: 0;
