@@ -54,7 +54,7 @@ function saveProfile() {
 }
 
 function setStar(){
-    const rating = parseInt(1);
+    const rating = parseInt(5);
     const star1 = document.getElementById('po1');
     const star2 = document.getElementById('po2');
     const star3 = document.getElementById('po3');
