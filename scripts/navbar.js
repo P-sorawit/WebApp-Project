@@ -26,8 +26,8 @@ export function generatedNavbar(isLogin) {
                     </label>
                     <div class="nav-links">
                         <ul class="menu">
-                            <li><a href="#">Post</a></li>
-                            <li><a href="#">My activity</a></li>
+                            <li><a href="../post/post.html">Post</a></li>
+                            <li><a href="../my-activity/my-activity.html">My activity</a></li>
                             <li><a id ="notificationsButton">Notification</a></li>
                             <li><a href="../profile/profile.html">Profile</a></li>
                             <li><a href="../main_guest/main_guest.html">Log out</a></li>
