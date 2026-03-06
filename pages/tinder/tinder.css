@@ -1,0 +1,64 @@
+body {
+    padding-top: 106px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.tinder {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    gap: 10px;
+    margin: 40px;
+}
+
+#post {
+    background-color:brown;
+}
+
+#user {
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+#user-image {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#user-info {
+    width: 70%;
+    background-color:beige;
+    border-radius: 20px;
+}
+
+
+#QA {
+    background-color:cadetblue;
+}
+
+#QA-info {
+    background-color: burlywood;
+    margin: 20px;
+}
+
+#select {
+    background-color: darksalmon;
+    display: flex;
+    gap: 20px;
+}
+
+#mouse {
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+}
