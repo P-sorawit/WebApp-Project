@@ -1,5 +1,4 @@
 
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -31,7 +30,7 @@ body {
   width: 60px;
   height: 60px;
 }
-my-post-container
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -39,7 +38,6 @@ my-post-container
   text-align: center;
   flex-wrap: wrap;
   justify-content: center;
-  font-weight: 700;
 
 }
 
@@ -54,13 +52,15 @@ my-post-container
 .menu a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15px;
   transition: color 0.3s;
+  font-weight: 700;
 }
 
 .menu a:hover {
-  color: #9aa2ff;
-  text-shadow: 0 0px 25px #5A68FF;
+  color: #ffffff;
+  /* text-shadow: 0 0px 25px #5A68FF; */
+  font-weight: 900;
 }
 
 .auth-buttons {
@@ -133,6 +133,7 @@ my-post-container
 
   #check_nav:checked~.menu_icon #open{
     display: none;
+    
   }
 
   .menu_icon #close{
@@ -147,7 +148,7 @@ my-post-container
     flex-direction: column;
     gap: 0;
     position: absolute;
-    /* background-color: #1a1a1a; */
+    background-color: #0b092b;
     top: 100%;
     left: 0;
     right: 0;
@@ -165,6 +166,7 @@ my-post-container
 
   .auth-buttons{
     overflow: hidden;
+    
   }
 
   #check_nav:checked~.nav-links{

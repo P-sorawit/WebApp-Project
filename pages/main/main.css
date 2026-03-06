@@ -121,7 +121,7 @@ body {
 .hero-image img {
     width: 170%;
     border-radius: 20px;
-    box-shadow: rgba(64, 37, 163, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(224, 224, 224, 0.338) 0px 2px 4px 0px inset;
+    box-shadow: rgba(64, 37, 163, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(159, 178, 255, 0.727) 0px 2px 4px 0px inset;
 }
 
 /*  --------- DESCRIPTION -------- */
@@ -142,7 +142,7 @@ body {
     background: 
         radial-gradient(circle at 50% 50%, rgba(91, 123, 250, 0.397), transparent 40%),
         linear-gradient(90deg, #12002b 0%, #1b1464 40%, #1f2b8f 70%, #273a86 100%);
-    box-shadow: rgba(64, 37, 163, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(169, 169, 169, 0.2) 0px -3px 3px inset;
+    box-shadow: rgba(64, 37, 163, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(159, 178, 255, 0.727) 0px 2px 4px 0px inset;
 }
 
 /*  --------- FEATURE -------- */
@@ -174,7 +174,7 @@ body {
     background: #97a6e445;
     color: white;
     box-shadow: 0 20px 60px rgba(51, 14, 163, 0.451);
-    box-shadow: rgba(64, 37, 163, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(169, 169, 169, 0.2) 0px 2px 4px 0px inset;
+    box-shadow: rgba(64, 37, 163, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(159, 178, 255, 0.727) 0px 2px 4px 0px inset;
 }
 
 .feature-data{
@@ -257,7 +257,7 @@ body {
         linear-gradient(90deg, #4f05b685 0%, #3e35a47b 40%, #2634b356 70%, #5c2fa599 100%);
     padding: 40px;
     border-radius: 20px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(224, 224, 224, 0.12) 0px 2px 4px 0px inset;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px, rgba(159, 178, 255, 0.727) 0px 2px 4px 0px inset;
     text-align: center;
     transition: 0.3s;
     font-size: 120%;
