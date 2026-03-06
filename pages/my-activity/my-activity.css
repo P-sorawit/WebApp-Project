@@ -1,0 +1,49 @@
+body {
+    padding-top: 116px;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.post-container {
+    margin-bottom: 50px;
+}
+
+.enrolled-container {
+    margin-bottom: 150px;
+}
+
+#my-post, #enrolled {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(350px, 600px)); 
+  gap: 30px;
+  justify-content: center; 
+  
+}
+
+@media (max-width: 1400px) {
+  #my-post, #enrolled {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  #my-post, #enrolled {
+    grid-template-columns: 1fr;
+    width: 95vw;
+  }
+}
+
+@media (max-width: 450px) {
+  #my-post, #enrolled {
+    grid-template-columns: 1fr;
+    width: 95vw;
+  }
+}
