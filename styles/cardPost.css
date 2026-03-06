@@ -1,5 +1,5 @@
 .card {
-    background: #1a1a1a;
+    background: #97a6e445;
     color: white;
     border-radius: 25px;
     padding: 20px;
@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 0px 25px rgba(69, 20, 228, 0.483), rgba(159, 178, 255, 0.727) 0px 2px 4px 0px inset;
 }
 
 .card:hover {
@@ -25,6 +25,7 @@
     height: 140px;
     border-radius: 18px;
     object-fit: cover;
+    box-shadow: rgba(42, 22, 113, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px;
 }
 
 .card-right {
@@ -51,6 +52,7 @@
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
+    text-shadow: 0 0px 25px #5A68FF;
 }
 
 .badge{
@@ -94,7 +96,7 @@
     width:26px;
     height:26px;
     border-radius:50%;
-    border:2px solid #1e1e1e;
+    border:2px solid #5b6cff;
     margin-left:-7px;
 }
 
@@ -128,7 +130,7 @@
 
 .category-tag{
     width:60%;
-    background:#333;
+    background:#97a6e445;
     padding:6px 14px;
     border-radius:20px;
     font-size:13px;
@@ -138,7 +140,7 @@
 
 .size-tag{
     width:40%;
-    background:#333;
+    background:#97a6e473;
     padding:6px 14px;
     border-radius:20px;
     font-size:13px;
