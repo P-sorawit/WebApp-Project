@@ -19,6 +19,10 @@ body {
     margin-bottom: 150px;
 }
 
+.post-container h1, .enrolled-container h1 {
+    color: white;
+}
+
 #my-post, #enrolled {
   width: 80vw;
   display: grid;
