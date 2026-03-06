@@ -55,12 +55,13 @@ body {
   font-size: 15px;
   transition: color 0.3s;
   font-weight: 700;
+  transition: 0.3s ease;
 }
 
 .menu a:hover {
-  color: #ffffff;
-  /* text-shadow: 0 0px 25px #5A68FF; */
-  font-weight: 900;
+  color: rgb(145, 167, 255);
+  text-shadow: 0 0px 25px #5A68FF;
+  font-weight: 700;
 }
 
 .auth-buttons {
