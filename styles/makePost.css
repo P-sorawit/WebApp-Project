@@ -118,7 +118,7 @@ input[type="file"] {
 
 #backMakePost{
     padding: 1%;
-    font-size: 1vw;
+    font-size: 18px;
     border: solid black 2px;
     border-radius: 20px 20px;
     padding-inline: 2%;
@@ -126,8 +126,9 @@ input[type="file"] {
 #submitMakePost{
     padding: 1%;
     padding-inline: 2%;
-    font-size: 1vw;
+    font-size: 18px;
     background-color: #5A68FF;
     border: solid black 2px;
     border-radius: 20px 20px;
+    
 }
