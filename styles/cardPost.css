@@ -56,22 +56,22 @@
 }
 
 .badge{
-  background:#5b6cff;
-  padding:4px 10px;
-  border-radius:8px;
-  font-size:14px;
-  white-space:nowrap;
+    background:#5b6cff;
+    padding:4px 10px;
+    border-radius:8px;
+    font-size:14px;
+    white-space:nowrap;
 }
 
 .card-desc{
-  margin:0;
-  font-size:14px;
-  color:#cfcfcf;
-  line-height:1.4;
+    margin:0;
+    font-size:14px;
+    color:#cfcfcf;
+    line-height:1.4;
 
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  overflow:hidden;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
 }
 
 .card-members{
