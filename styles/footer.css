@@ -3,13 +3,16 @@
     height: fit-content;
     background-color: #1a1a1a;
     color: rgba(255, 255, 255, 0.467);
+    padding-bottom: 1rem;
+
+    
 }
 
 .team_member{
     display: grid;
     grid-template-columns: repeat(6, minmax(200px, 1fr));
     place-items: center;
-    gap: 2rem;
+    gap: 1rem;
     justify-content: center;
 }
 
@@ -64,7 +67,7 @@
     }
 }
 
-@media (max-width: 750px){
+@media (max-width: 765px){
     .team_member{
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }

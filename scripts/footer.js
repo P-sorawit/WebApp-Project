@@ -11,21 +11,21 @@ export function generatedFooter() {
             <div id="member">
                 <img src="https://lh3.googleusercontent.com/d/1CwQ5bTRtaYW_s258toHLpBChkmUMWnkR" alt="Member 5">
                 <div class="member-detail">
-                    <p class="name">Phattrawin Yodsukha</p>
+                    <p class="name">Phattrawin Yodsukhaㅤ</p>
                     <p class="id">67010699</p>
                 </div>
             </div>
             <div id="member">
                 <img src="https://lh3.googleusercontent.com/d/1JumvINXqMwBnR5giU8-KgnB_8vYnyt-8" alt="Member 5">
                 <div class="member-detail">
-                    <p class="name">Wiritpol Rodngoen</p>
+                    <p class="name">Wiritpol Rodngoenㅤㅤ</p>
                     <p class="id">67010848</p>
                 </div>
             </div>
             <div id="member">
                 <img src="https://lh3.googleusercontent.com/d/1GZjnkl6MDOS8poZIhGBS0wAaS88IeZvV" alt="Member 5">
                 <div class="member-detail">
-                    <p class="name">Veerapat Pirultham</p>
+                    <p class="name">Veerapat Pirulthamㅤㅤ</p>
                     <p class="id">67010852</p>
                 </div>
             </div>
