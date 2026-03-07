@@ -1,55 +1,40 @@
 export function ajax(method, url, data = null) {
 
-    var xhr = new XMLHttpRequest();
+    return new Promise((resolve, reject) => {
 
-    xhr.open(method, url, true);
+        const xhr = new XMLHttpRequest();
 
-    xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.open(method, url, true);
 
-    xhr.onreadystatechange = function () {
+        xhr.setRequestHeader("Content-Type", "application/json");
 
-        if (xhr.readyState === 4) {
+        xhr.onreadystatechange = function () {
 
-            if (xhr.status === 200 || xhr.status === 201) {
-                console.log(xhr.responseText);
-            } else {
-                console.error(xhr.status);
+            if (xhr.readyState === 4) {
+
+                if (xhr.status >= 200 && xhr.status < 300) {
+
+                    const result = xhr.responseText
+                        ? JSON.parse(xhr.responseText)
+                        : null;
+
+                    resolve(result);
+
+                } else {
+
+                    reject({
+                        status: xhr.status,
+                        message: xhr.responseText
+                    });
+
+                }
+
             }
 
-        }
+        };
 
-    };
+        xhr.send(data ? JSON.stringify(data) : null);
 
-    xhr.send(data ? JSON.stringify(data) : null);
+    });
 
-}
-
-export function ajaxGet(url) {
-
-    var xhr = new XMLHttpRequest();
-
-    xhr.open("GET", url, true);
-
-    xhr.onreadystatechange = function () {
-
-        if (xhr.readyState === 4 && xhr.status === 200) {
-            console.log(xhr.responseText);
-        }
-
-    };
-
-    xhr.send();
-
-}
-
-export function ajaxPost(url, data) {
-    ajax("POST", url, data);
-}
-
-export function ajaxPut(url, data) {
-    ajax("PUT", url, data);
-}
-
-export function ajaxDelete(url) {
-    ajax("DELETE", url);
 }
