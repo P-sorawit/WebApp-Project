@@ -1,36 +1,46 @@
-@model IEnumerable<WebApp.Models.Post>
-
 @{
-    ViewData["Title"] = "All Posts";
+    ViewData["Title"] = "Activity Feed";
 }
 
-<div class="container mt-4">
-    <h2>Activity Feed</h2>
-    <hr />
+<head>
+    <link rel="stylesheet" href="/css/pages/post.css" />
+    <link rel="stylesheet" href="/css/myPost.css" />
+    <link rel="stylesheet" href="/css/makePost.css" />
+</head>
 
-    <div class="row">
-        @foreach (var post in Model)
-        {
-            <div class="col-md-4 mb-4">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">@post.Title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Host: @post.CreatedBy.Name</h6>
-                        <span class="badge bg-primary">@post.Type</span>
-                        
-                        <p class="card-text mt-2">@post.Description</p>
-                        
-                        <p class="small text-muted">
-                            Participants: @post.MinParticipants - @post.MaxParticipants
-                        </p>
-
-                        <a href="/Post/Details/@post.Id" class="btn btn-outline-primary">View Details</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Posted on @post.CreatedAt.ToString("MMM dd, yyyy")
-                    </div>
-                </div>
-            </div>
-        }
+<div class="page">
+    
+    <div class="search_main">
+        <div class="activity_search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+            <input type="text" id="findTitleBlock" placeholder="Find activities..." />
+            <button id="submitFindTitleBlock">Search</button>
+        </div>
     </div>
+
+    <div class="add-post">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4kqSX7olduATclTx5-qwPKxAb26dBhQvKA&s" class="userProfileMakePost" alt="User" />
+        
+        <button id="makePost">Create a new activity...</button>
+    </div>
+
+    <div id="all-post"></div>
+
 </div>
+
+<div id="makePostContainer" style="display: none;"></div>
+<div id="answerContainer" style="display: none;"></div>
+
+@section Scripts {
+    <script type="module" src="/js/makePost.js"></script>
+    <script type="module" src="/js/post/post.js"></script>
+    
+    <script type="module">
+        import { haddleMakePost } from '/js/makePost.js';
+        document.addEventListener("DOMContentLoaded", () => {
+            haddleMakePost();
+        });
+    </script>
+}

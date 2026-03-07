@@ -1,64 +1,29 @@
 import { Card } from "./card.js";
-const data = {
-  post: [
-    {
-      title: "คนบ้า",
-      description: "รับสมาชิกอยู่ กทถึง 4 คน แต่รอฟฟตได้เป็นนายกก่อนนะ อุอิ",
-      image: "https://www.chula.ac.th/wp-content/uploads/2018/12/cu_101261_0001.jpg",
-      owner: "../../assets/member/ken.png",
-      members: ["../../assets/member/neanea.png","../../assets/member/nut.png"],
-      category: "Sport",
-      size: "3-5",
-      now: 3,
-      max: 5,
-    },
-    {
-      title: "คนบ้า",
-      description: "รับสมาชิกอยู่ กทถึง 4 คน แต่รอฟฟตได้เป็นนายกก่อนนะ อุอิ",
-      image: "https://www.chula.ac.th/wp-content/uploads/2018/12/cu_101261_0001.jpg",
-      owner: "../../assets/member/neanea.png",
-      members: ["../../assets/member/mattew.png","../../assets/member/nut.png"],
-      category: "Sport",
-      size: "3-5",
-      now: 3,
-      max: 5,
-    },
-    {
-      title: "คนบ้า",
-      description: "รับสมาชิกอยู่ กทถึง 4 คน แต่รอฟฟตได้เป็นนายกก่อนนะ อุอิ",
-      image: "https://www.chula.ac.th/wp-content/uploads/2018/12/cu_101261_0001.jpg",
-      owner: "../../assets/member/nut.png",
-      members: ["../../assets/member/neanea.png","https://i.pravatar.cc/30?img=3","https://i.pravatar.cc/30?img=2","../../assets/member/mattew1.png","https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3","https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3","https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3","https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3","https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3",],
-      category: "Sport",
-      size: "3-5",
-      now: 3,
-      max: 5,
-    },
-    {
-      title: "คนบ้า",
-      description: "รับสมาชิกอยู่ กทถึง 4 คน แต่รอฟฟตได้เป็นนายกก่อนนะ อุอิ",
-      image: "https://www.chula.ac.th/wp-content/uploads/2018/12/cu_101261_0001.jpg",
-      owner: "../../assets/member/mattew.png",
-      members: ["https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3",],
-      category: "Sport",
-      size: "3-5",
-      now: 3,
-      max: 5,
-    },
-    {
-      title: "คนบ้า",
-      description: "รับสมาชิกอยู่ กทถึง 4 คน แต่รอฟฟตได้เป็นนายกก่อนนะ อุอิ",
-      image: "https://www.chula.ac.th/wp-content/uploads/2018/12/cu_101261_0001.jpg",
-      owner: "../../assets/member/mattew1.png",
-      members: ["https://i.pravatar.cc/30?img=2","https://i.pravatar.cc/30?img=3",],
-      category: "Sport",
-      size: "3-5",
-      now: 3,
-      max: 5,
+
+async function loadPosts() {
+    try {
+        // 1. Fetch the real data from your C# backend!
+        const response = await fetch('/Post/GetAllPosts');
+        
+        if (!response.ok) {
+            throw new Error("Failed to fetch posts from the server");
+        }
+
+        const posts = await response.json();
+        const div = document.getElementById("all-post");
+        
+        // Clear any existing loading text
+        div.innerHTML = ""; 
+
+        // 2. Loop through the real database posts and create cards
+        for (const element of posts) {
+            div.appendChild(Card(element));
+        }
+    } catch (error) {
+        console.error("Error loading posts:", error);
+        document.getElementById("all-post").innerHTML = "<p>Failed to load posts.</p>";
     }
-  ]
-};
-const div = document.getElementById("all-post");
-for (const element of data.post) {
-  div.appendChild(Card(element));
 }
+
+// Call the function when the script loads
+loadPosts();

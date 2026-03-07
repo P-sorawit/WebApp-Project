@@ -2,21 +2,28 @@
     ViewData["Title"] = "Create a New Post";
 }
 
-<div class="container mt-5 text-center">
-    <h2>Ready to host an activity?</h2>
-    <p>Click the button below to fill out your details.</p>
+<head>
+    <link rel="stylesheet" href="/css/pages/post.css" />
+    <link rel="stylesheet" href="/css/myPost.css" />
+    <link rel="stylesheet" href="/css/makePost.css" />
+</head>
+
+<div class="page" style="margin-top: 50px;">
     
-    <button id="makePost" class="btn btn-primary btn-lg mt-3">Create Post</button>
+    <div class="add-post">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH4kqSX7olduATclTx5-qwPKxAb26dBhQvKA&s" class="userProfileMakePost" alt="User" />
+        
+        <button id="makePost">Create a new activity...</button>
+    </div>
+
 </div>
 
-<div id="makePostContainer"></div>
+<div id="makePostContainer" style="display: none;"></div>
 
 @section Scripts {
     <script type="module">
-        // Make sure this path matches exactly where makePost.js is in your wwwroot folder!
         import { haddleMakePost } from '/js/makePost.js'; 
         
-        // Initialize the event listeners
         document.addEventListener("DOMContentLoaded", () => {
             haddleMakePost();
         });
