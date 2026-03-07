@@ -150,15 +150,27 @@
 
 }
 
-@media (max-width: 1150px){
+@media (max-width: 1154px){
     .groupMember{
         place-items: start;
     }
 
     .Vmember{
-        width: 100%;
+        width: 280px;
     }
 
+}
+
+@media (max-width: 1104px){
+    .Vmember{
+        width: 275px;
+    }
+}
+
+@media (max-width: 1092px){
+    .Vmember{
+        width: 100%;
+    }
 }
 
 @media (max-width: 850px){
@@ -166,18 +178,7 @@
         width: 12rem;
         height: 12rem;
     }
-}
-
-@media (max-width: 770px){
-    .groupMember{
-        place-items: start;
-    }
-
-
-    .Vmember{
-        width: 100%;
-    }
-
+    
 }
 
 
