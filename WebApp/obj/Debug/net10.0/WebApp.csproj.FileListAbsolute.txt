@@ -301,7 +301,6 @@ D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Deb
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\scopedcss\bundle\WebApp.styles.css
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\scopedcss\projectbundle\WebApp.bundle.scp.css
-D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\cyyammxk5f-{0}-b9sayid5wm-b9sayid5wm.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\r0eh6qul5j-{0}-61n19gt1b8-61n19gt1b8.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\gd9znr7z8k-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\siwt0tsb8r-{0}-t1cqhe9u97-t1cqhe9u97.gz
@@ -363,8 +362,6 @@ D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Deb
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\6k7fv1pfqa-{0}-9vr69e8ynj-9vr69e8ynj.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\xlfud65edp-{0}-87fc7y1x7t-87fc7y1x7t.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\y4mb16hq9n-{0}-mlv21k5csn-mlv21k5csn.gz
-D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\nrt9wfei13-{0}-qsajz3ps4l-qsajz3ps4l.gz
-D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\lcaz16i7pu-{0}-qsajz3ps4l-qsajz3ps4l.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\staticwebassets.build.json
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\staticwebassets.development.json
@@ -399,4 +396,12 @@ D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Deb
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\dhx25nj38k-{0}-b4orgxn548-b4orgxn548.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\fu2tu9dxgh-{0}-3ht2ghdgdu-3ht2ghdgdu.gz
 D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\qxh2irncct-{0}-y0jsse7ybb-y0jsse7ybb.gz
-D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\q38e9xdmez-{0}-1m6l8jttn5-1m6l8jttn5.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\q38e9xdmez-{0}-f0hine50ru-f0hine50ru.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\y0x2we7pop-{0}-0kzocyx44w-0kzocyx44w.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\xhk8br4qje-{0}-6ce4jzohei-6ce4jzohei.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\zhap4taeue-{0}-odky3wuexo-odky3wuexo.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\je7gl9pmz5-{0}-iuz5gpfwkw-iuz5gpfwkw.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\g5fi2i68d6-{0}-eoh8o3e5r7-eoh8o3e5r7.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\cyyammxk5f-{0}-5ipweew5fc-5ipweew5fc.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\nrt9wfei13-{0}-rb5dqfhmlu-rb5dqfhmlu.gz
+D:\code\University\Year_2\2\WebApp\project\fontend\WebApp-Project\WebApp\obj\Debug\net10.0\compressed\lcaz16i7pu-{0}-rb5dqfhmlu-rb5dqfhmlu.gz
