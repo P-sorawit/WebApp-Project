@@ -17,19 +17,16 @@
         <div class="photo_rating_info">
             <div id="img_container">
                 <h1>Profile</h1>
-                <img src="https://lh3.googleusercontent.com/d/18d8yaUKgsN2MNaUsKkUxpuzECdlJvLi6" alt="your_photo">
+                <img id="profile-img" alt="your_photo">
+
+                <input type="file" id="upload-img" accept="image/*" hidden onchange="previewImage(event)">
+
                 <div id="rating">
                     <div id="point_frame">
                         <h3>Review</h3>
-                        <h3 id="point">4.0</h3>
+                        <h3 id="point"></h3>
                     </div>
-                    <div id="star">
-                        <p id="po1">&#9733;</p>
-                        <p id="po2">&#9733;</p>
-                        <p id="po3">&#9733;</p>
-                        <p id="po4">&#9733;</p>
-                        <p id="po5">&#9733;</p>
-                    </div>
+                    <div id="star"></div>
 
                 </div>
             </div>
@@ -38,14 +35,14 @@
         </div>
         <div class="personal_info">
             <p>Username</p>
-            <input id="Username" type="text" value="P.sorawit" readonly>
+            <input id="Username" type="text" readonly>
             <p>Email</p>
-            <input id="Email" type="text" value="67010926@kmitl.ac.th" readonly>
+            <input id="Email" type="text" readonly>
             <p>Phone</p>
-            <input id="Phone" type="text" value="085-123456" readonly>
+            <input id="Phone" type="text" readonly>
             <p>About</p>
             <textarea id="About" rows="6" type="text" maxlength="500"
-                readonly>I am a dedicated and results-driven professional with a passion for solving complex problems and delivering high-quality work. With a background in [Your Industry/Field], I thrive in collaborative environments where I can leverage my skills in [Skill 1] and [Skill 2] to drive meaningful impact. I am a lifelong learner committed to staying ahead of industry trends and consistently looking for ways to streamline processes and add value to my team.</textarea>
+                readonly></textarea>
         </div>
     </div>
     <footer></footer>
