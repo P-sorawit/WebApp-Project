@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../../styles/navbar.css">
-    <link rel="stylesheet" type="text/css" href="../sign_in/sign_in.css">
+    <link rel="stylesheet" type="text/css" href="newpass.css">
     <title>Document</title>
 </head>
 <body>
@@ -17,22 +17,24 @@
         <div id="info">
             <div>
                 <H1>Reset Password</H1>
+                <p id="error"></p>
             </div>
             <form action="" method="post">
-                <p>Email</p>
-                <input id="email" name="email" type="email" placeholder="xxx@gmial.com" required>
-                <p>Phone Number </p>
-                <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxx" pattern="[0-9]{3}-[0-9]{7}" required>
+                <p>New Password</p>
+                <input id="newPass" name="newPass" type="password" placeholder="P@ssword123" required>
+                <p>Confirm Password</p>
+                <input id="confirmPass" name="confirmPass" type="password" placeholder="P@ssword123"  required>
                 <p></p>
-                <input id="submitForGotpass" type="submit" value="Next">
+                <input id="resetPass" type="submit" value="Reset Password">
             </form>
         </div>
     </div>
     <footer></footer>
-
+    
     <script type="module">
         import { generatedNavbar } from "../../scripts/navbar.js";
         import { generatedFooter } from "../../scripts/footer.js";
+        
         generatedNavbar(false);
         generatedFooter();
     </script>
