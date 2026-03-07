@@ -48,7 +48,7 @@ export function generatedNavbar(isLogin) {
                     </label>
                     <div class="nav-links">
                         <ul class="menu">
-                            <li><a href="/post">Post</a></li>
+                            <li><a href="/Post/Create">Post</a></li>
                             <li><a href="/my-activity">My activity</a></li>
                             <li><a href="/profile">Profile</a></li>
                             <li><a id ="notificationsButton">Notification</a></li>

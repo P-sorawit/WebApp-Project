@@ -272,19 +272,36 @@ export function haddleMakePost(){
             console.log("Ready to send")
             console.log(formData)
 
-            // try{
-            //     const res = await fetch("http://localhost:3000/posts",{
-            //         method:"POST",
-            //         body: formData
-            //     })
+            try {
+                // Pointing to the new C# PostController route we created
+                const res = await fetch("/Post/CreatePostApi", {
+                    method: "POST",
+                    body: formData
+                });
 
-            //     const data = await res.json()
+                if (res.ok) {
+                    const data = await res.json();
+                    console.log("Server:", data);
+                    alert("Post created successfully!");
+                    
+                    // Close the modal upon success
+                    isShowing = false;
+                    container.style.display = "None";
+                    container.innerHTML = "";
+                    
+                    // Optional: reload the page to show the new post
+                    window.location.reload(); 
+                } else {
+                    // Handle errors (e.g., not logged in, bad request)
+                    const errorData = await res.text();
+                    console.error("Server Error:", errorData);
+                    alert("Failed to create post. Make sure you are logged in!");
+                }
 
-            //     console.log("Server:",data)
-
-            // }catch(err){
-            //     console.error(err)
-            // }
+            } catch(err) {
+                console.error("Network or parsing error:", err);
+                alert("A network error occurred.");
+            }
 
         })
 
