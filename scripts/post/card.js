@@ -96,7 +96,7 @@ export function Card({ title, description, image, owner, members, category, size
       { question: "อิอิ3" },
       { question: "อิอิ4" },
     ]
-
+    let answers = new Array(mockQuestion.length).fill("")
     function renderQuestion() {
 
       const isFirst = index === 0
@@ -112,7 +112,7 @@ export function Card({ title, description, image, owner, members, category, size
             <h3>Question ${index+1} : ${mockQuestion[index].question}</h3>
 
             <div id="formAnswer" class="formAnswer">
-              <textarea rows="9" cols="50" id="Answer" name="Answer"></textarea>
+              <textarea rows="9" cols="30" id="Answer" name="Answer">${answers[index]}</textarea>
             </div>
 
             <div class="footerAnswer">
@@ -133,21 +133,34 @@ export function Card({ title, description, image, owner, members, category, size
 
       if (backBtn) {
         backBtn.addEventListener("click", () => {
+
+          const textarea = document.getElementById("Answer")
+
+          // save answer
+          answers[index] = textarea.value
+
           index--
           renderQuestion()
+
         })
       }
 
       nextBtn.addEventListener("click", () => {
 
+        const textarea = document.getElementById("Answer")
+
+        // save answer
+        answers[index] = textarea.value
+
         if (isLast) {
-          console.log("DONE")
+          console.log("All Answers:", answers)
           answerContainer.style.display = "none"
           return
         }
 
         index++
         renderQuestion()
+
       })
     }
 
