@@ -9,10 +9,13 @@ function highlightMenu() {
     links.forEach(link => {
 
         const href = link.getAttribute("href")
-        const linkPage = href.split("/").pop()
-        if (linkPage === currentPage) {
-            link.classList.add("active")
+        if(href){
+            const linkPage = href.split("/").pop()
+            if (linkPage === currentPage) {
+                link.classList.add("active")
+            }
         }
+
 
     })
 

@@ -50,8 +50,24 @@ body {
     color: #999;
 }
 
-input[type="file"] {
+#fileInput {
     display: none;
+}
+
+
+.uploadQrBtn{
+  display:inline-block;
+  padding:10px 18px;
+  background:#5A68FF;
+  color:white;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:60;
+  margin-top: 15px;
+}
+
+.uploadQrBtn:hover{
+  background:#4452e6;
 }
 
 #boxMakePost{
@@ -75,7 +91,7 @@ input[type="file"] {
 .fillInput2MakePost{
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 0%;
 }
 
 .fillInput2MakePost input{
@@ -114,6 +130,7 @@ input[type="file"] {
     justify-content: end;
     gap: 3%;
     width: 100%;
+    margin-top: 10px;
 }
 
 #backMakePost{
