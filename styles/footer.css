@@ -38,7 +38,7 @@
     font-weight: 400;
 }
 
-#member img{
+.member img{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -46,7 +46,7 @@
     box-shadow: rgba(42, 22, 113, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(169, 169, 169, 0.2) 0px 2px 4px 0px inset;
 }
 
-#member{
+.member{
     display: flex;
     gap: 1rem;
 }
