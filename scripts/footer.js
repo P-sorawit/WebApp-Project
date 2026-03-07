@@ -8,42 +8,42 @@ export function generatedFooter() {
             <h3>Created By</h3>
         </div>
         <div class="team_member">
-            <div id="member">
+            <div class="member">
                 <img src="https://lh3.googleusercontent.com/d/1CwQ5bTRtaYW_s258toHLpBChkmUMWnkR" alt="Member 5">
                 <div class="member-detail">
                     <p class="name">Phattrawin Yodsukhaㅤ</p>
                     <p class="id">67010699</p>
                 </div>
             </div>
-            <div id="member">
+            <div class="member">
                 <img src="https://lh3.googleusercontent.com/d/1JumvINXqMwBnR5giU8-KgnB_8vYnyt-8" alt="Member 5">
                 <div class="member-detail">
                     <p class="name">Wiritpol Rodngoenㅤㅤ</p>
                     <p class="id">67010848</p>
                 </div>
             </div>
-            <div id="member">
+            <div class="member">
                 <img src="https://lh3.googleusercontent.com/d/1GZjnkl6MDOS8poZIhGBS0wAaS88IeZvV" alt="Member 5">
                 <div class="member-detail">
                     <p class="name">Veerapat Pirulthamㅤㅤ</p>
                     <p class="id">67010852</p>
                 </div>
             </div>
-            <div id="member">
+            <div class="member">
                 <img src="https://lh3.googleusercontent.com/d/1bxO9OyLYTB9JU5aQy4qhDDtLlK8StlTK" alt="Member 5">
                 <div class="member-detail">
                     <p class="name">Verinda Temboonsaran</p>
                     <p class="id">67010858</p>
                 </div>
             </div>
-            <div id="member">
+            <div class="member">
                 <img src="https://lh3.googleusercontent.com/d/18d8yaUKgsN2MNaUsKkUxpuzECdlJvLi6" alt="Member 5">
                 <div class="member-detail">
                     <p class="name">Sorawit Petpiboonthai</p>
                     <p class="id">67010926</p>
                 </div>
             </div>
-            <div id="member">
+            <div class="member">
                 <img src="https://lh3.googleusercontent.com/d/1HYvB20wMarnTX3C4cjs3IC23aUiS-Ubm" alt="Member 5">
                 <div class="member-detail">
                     <p class="name">Achiravit Vanasinchai</p>

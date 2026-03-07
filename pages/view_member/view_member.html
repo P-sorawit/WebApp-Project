@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view_member.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav></nav>
+    <div class="frameMember">
+        <div class="toppicViewMember">
+            <img class="toppicImg" src="https://www.chula.ac.th/wp-content/uploads/2018/12/cu_101261_0001.jpg" alt="Activity_img">
+            <div>
+                <h1>Toppic View Member</h1>
+                <p class="descriptionToppic">brabrab rabrbarb arrbrab brabrab rabrb brab rabr abrab brabr abrabar barba br brabr abra br br abr ab </p>
+                <h1>Owner</h1>
+                <div class="Owner"></div>
+            </div>
+        </div>
+        <div class="subToppic">
+            <h1>Member</h1>
+        </div>
+        <div class="groupMember"></div>
+    </div>
+    <footer></footer>
+    <script type="module">
+        import { generatedNavbar } from "../../scripts/navbar.js";
+        import { generatedFooter } from "../../scripts/footer.js";
+        import { gendataFromBackend } from "../../scripts/view_member.js";
+        generatedNavbar(true);
+        generatedFooter();
+        gendataFromBackend();   
+    </script>
+</body>
+
+</html>
