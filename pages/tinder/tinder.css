@@ -1,0 +1,260 @@
+body {
+    padding-top: 106px;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #0f172a; 
+    color: #f8fafc;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+.tinderContainer {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    margin: 40px;
+    background: #1e293b; 
+    border-radius: 28px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#memberCount {
+    height: 40px;
+    font-size: 16px;
+    background-color: rgba(231, 27, 27, 0.05);
+    padding: 10px 20px;
+    margin: 0px 0px 0px 20px;
+}
+
+#post {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #1e293b, #334155);
+    padding: 15px 20px;
+}
+
+#post h1{
+    color: #60a5fa;
+    margin: 0px 0px 0px 20px;
+}
+
+#user {
+    background-color: #0f172a;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+#user-image {
+    align-self: center;
+    width: 15vw;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #334155;
+}
+
+#user-info {
+    height: auto;
+    background-color: transparent;
+    flex: 1;
+}
+
+#info {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 10px;
+    font-size: 20px;
+}
+
+#info b {
+    color: #94a3b8;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+#info span:last-child {
+    max-height: 10vw;
+    overflow-y: auto;
+    display: block;
+    padding-right: 10px;
+    color: #cbd5e1;
+    line-height: 1.5;
+}
+
+#info span:last-child::-webkit-scrollbar {
+    width: 6px;
+}
+#info span:last-child::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+
+#rating {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#star {
+    margin-top: -4px;
+    display: flex;
+    gap: 2px;
+}
+
+#star p {
+    margin: 0;
+    font-size: 24px;
+    cursor: default;
+}
+
+#QA {
+    display: flex;
+    flex-direction: column;
+    background-color: #1e293b;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 0px 20px 0px 20px;
+}
+
+#QA-info {
+    background-color: rgba(255, 255, 255, 0.03);
+    margin: 30px;
+    padding: 25px;
+    border-radius: 16px;
+    border-left: 4px solid #3b82f6;
+}
+
+#question {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #60a5fa;
+}
+#answer p {
+    font-size: 20px;
+}
+
+#btn-QA {
+    align-self: end;
+    padding: 0px 30px 20px 0px;
+    display: flex;
+    gap: 10px;
+}
+
+#btn-QA button {
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#nextBtn { 
+    background-color: #3b82f6;
+    color: white;
+    font-size: 20px;
+}
+#backBtn { 
+    background-color: #475569;
+    color: white;
+    font-size: 20px;
+}
+
+#select {
+    height: 70px;
+    background-color: #0f172a;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 20px 30px;
+}
+
+#action-btn {
+    display: flex;
+    gap: 10px;
+}
+
+#selectBtn, #unselectBtn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-weight: 100;
+    font-size: 28px;
+}
+
+#selectBtn { background-color: #10b981; color: white; }
+#unselectBtn { background-color: #ef4444; color: white; }
+
+#mouse {
+    width: 20vw;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
+.popupContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+#popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #3b82f6;
+    border-radius: 24px;
+    background-color: #1e293b;
+    color: white;
+    padding: 30px;
+    min-width: 300px;
+}
+
+#popupBtn {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+#popupBtn button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#comfirmBtn { background-color: #3b82f6; color: white; }
+#restartBtn { background-color: #475569; color: white; }
+
+@media (max-width: 900px){
+    #user {
+        flex-direction: column;
+    }
+
+    #user-image {
+        width: 30vw;
+        height: 30vw;
+        align-self: center;
+    }
+}
