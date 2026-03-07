@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/pages/sign_in.css">
+    <link rel="stylesheet" type="text/css" href="/css/pages/sign_in.css">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/js/sign_in.js"></script>
+    <nav>
+    </nav>
+    <div class="frame_sign">
+        <div id="photo">
+            <img  src="/assets/signin.jpg" alt="sign-in">
+        </div>
+        <div id="info">
+            <div>
+                <H1>Sign In</H1>
+            </div>
+            <form action="" method="post">
+                @if (TempData["ErrorMessageLogin"] != null)
+                    {
+                        <div class="error-message">@TempData["ErrorMessageLogin"]</div>
+                    }
+                <p>Email</p>
+                <input id="email" name="email" value="@ViewBag.Email" type="email" placeholder="Enter your Email" required>
+                <p>Password</p>
+                <input id="password" name="password" type="password" placeholder="Enter your Password" required>
+                <div class="ask_sign">
+                    <div id="showpass">
+                        <input type="checkbox" id="box_showpass" onclick="checkbox_sign()">
+                        <p>Show password?</p>
+                    </div>
+                    <div>
+                    <a href="../forgotpass/forgotpass.html">Forgot Password</a></div>
+                </div>
+                <input id="submitSign" type="submit" value="Sign In">
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+
+    <script type="module">
+        import { generatedNavbar } from "/js/navbar.js";
+        import { generatedFooter } from "/js/footer.js";
+        generatedNavbar(false);
+        generatedFooter();
+    </script>
+</body>
+</html>

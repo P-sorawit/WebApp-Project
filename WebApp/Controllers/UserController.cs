@@ -30,7 +30,7 @@ namespace WebApp.Controllers
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id.ToString() == userId);
             if (user == null)
             {
-                return NotFound();
+                return BadRequest("User not found");
             }
             return View(user);
         }
@@ -43,13 +43,13 @@ namespace WebApp.Controllers
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id.ToString() == userId);
             if (user == null)
             {
-                return NotFound();
+                return BadRequest("User not found");
             }
 
             if (string.IsNullOrWhiteSpace(name) || string.IsNullOrWhiteSpace(email))
             {
                 ModelState.AddModelError(string.Empty, "กรุณากรอกชื่อและอีเมลให้ครบถ้วน");
-                return View("Profile", user);
+                return View("Profile", "User");
             }
 
             user.Name = name;
@@ -84,18 +84,20 @@ namespace WebApp.Controllers
                 return BadRequest("Error updating profile");
             }
 
-            return RedirectToAction("Profile");
+            return RedirectToAction("Profile", "User");
         }
 
         [HttpGet]
         public async Task<IActionResult> ViewProfile(int id)
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             var user = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
             if (user == null)
             {
-                return NotFound();
+                return BadRequest("User not found");
             }
-            return View(user);
+            return View("ViewProfile", "User");
         }
     }
 }

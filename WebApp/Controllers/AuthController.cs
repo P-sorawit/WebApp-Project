@@ -24,6 +24,10 @@ namespace WebApp.Controllers
         [HttpGet]
         public IActionResult SignIn()
         {
+            if (User.Identity != null && User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
@@ -57,7 +61,9 @@ namespace WebApp.Controllers
                 return RedirectToAction("Index", "Home");
             }
 
-            ModelState.AddModelError(string.Empty, "Invalid email or password");
+            
+            ViewBag.Email = email;
+            TempData["ErrorMessageLogin"] = "Invalid email or password";
             return View("SignIn");
         }
 
@@ -79,15 +85,18 @@ namespace WebApp.Controllers
         {
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {
-                ModelState.AddModelError(string.Empty, "Username, email, and password are required");
+                TempData["ErrorMessageRegister"] = "Please fill in all required fields";
                 return View();
             }
 
             var userUse = await _context.Users.FirstOrDefaultAsync(u => u.Email == email);
             if (userUse != null)
             {
-                ModelState.AddModelError(string.Empty, "Email already exists");
-                return View("SignUp");
+                ViewBag.Username = username;
+                ViewBag.Email = email;
+                ViewBag.Phone = phone;
+                TempData["ErrorMessageRegister"] = "Email has already been taken";
+                return View();
             }
 
             try
@@ -95,7 +104,7 @@ namespace WebApp.Controllers
                 var user = new User
                 {
                     Name = username,
-                    Email = email,
+                    Email = email.ToLower(),
                     Password = password,
                     PhoneNumber = phone
                 };
@@ -107,7 +116,7 @@ namespace WebApp.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty, "Error creating account: " + ex.Message);
+                Console.WriteLine(ex);
                 return View("SignUp");
             }
         }

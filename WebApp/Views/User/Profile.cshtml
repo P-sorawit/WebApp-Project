@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/pages/profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <script src="/js/profile.js"></script>
+    </script>
+    <nav></nav>
+    <div class="frame_profile">
+        <div class="photo_rating_info">
+            <div id="img_container">
+                <h1>Profile</h1>
+                <img src="https://lh3.googleusercontent.com/d/18d8yaUKgsN2MNaUsKkUxpuzECdlJvLi6" alt="your_photo">
+                <div id="rating">
+                    <div id="point_frame">
+                        <h3>Review</h3>
+                        <h3 id="point">4.0</h3>
+                    </div>
+                    <div id="star">
+                        <p id="po1">&#9733;</p>
+                        <p id="po2">&#9733;</p>
+                        <p id="po3">&#9733;</p>
+                        <p id="po4">&#9733;</p>
+                        <p id="po5">&#9733;</p>
+                    </div>
+
+                </div>
+            </div>
+            <button id="edit-btn" class="btn btn-edit" onclick="toggleEdit()">Edit Profile</button>
+            <button id="save-btn" class="btn btn-save" onclick="saveProfile()">Save Changes</button>
+        </div>
+        <div class="personal_info">
+            <p>Username</p>
+            <input id="Username" type="text" value="P.sorawit" readonly>
+            <p>Email</p>
+            <input id="Email" type="text" value="67010926@kmitl.ac.th" readonly>
+            <p>Phone</p>
+            <input id="Phone" type="text" value="085-123456" readonly>
+            <p>About</p>
+            <textarea id="About" rows="6" type="text" maxlength="500"
+                readonly>I am a dedicated and results-driven professional with a passion for solving complex problems and delivering high-quality work. With a background in [Your Industry/Field], I thrive in collaborative environments where I can leverage my skills in [Skill 1] and [Skill 2] to drive meaningful impact. I am a lifelong learner committed to staying ahead of industry trends and consistently looking for ways to streamline processes and add value to my team.</textarea>
+        </div>
+    </div>
+    <footer></footer>
+    <script type="module">
+        import { generatedNavbar } from "../../scripts/navbar.js";
+        import { generatedFooter } from "../../scripts/footer.js";
+        generatedNavbar(true);
+        generatedFooter();
+    </script>
+</body>
+
+</html>
