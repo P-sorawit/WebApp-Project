@@ -8,6 +8,7 @@
     position:fixed;
     flex-direction: column;
     right: 0px;
+    top: 96px;
     z-index: 10000;
     color: white;
     width: 25vw;

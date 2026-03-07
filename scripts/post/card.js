@@ -82,6 +82,41 @@ export function Card({ title, description, image, owner, members, category, size
   }
 
   const button = card.querySelector(".btn-enroll")
+  const answerContainer = document.getElementById("answerContainer")
+  button.addEventListener('click',()=>{
+    answerContainer.style.display="flex"
+    let index = 0
+    const mockQuestion =[
+      {
+        question:"อิอิ1"
+      },
+      {
+        question:"อิอิ2"
+      },
+      {
+        question:"อิอิ3"
+      },
+      {
+        question:"อิอิ4"
+      },
+    ]
+    answerContainer.innerHTML = `
+            <div class="boxQuestion" id="boxAddQuestion">
+                <div>
+                    <h3>Question</h3>
+                    <div id="formQuestion" class="formQuestion">
+                        <textarea  rows="9" cols="30" id="question" name="question"></textarea>
 
+                    </div>
+                    <div class="footerAddQuestion">
+                        <input type="button" value="Back" id="backAddQuestion">
+                        <input type="button" value="Add" id="submitAddQuestion">
+                    </div>
+                </div>    
+            </div>`
+  })
+  answerContainer.addEventListener('click',()=>{
+    answerContainer.style.display="None"
+  })
   return card;
 }
