@@ -1,0 +1,243 @@
+.frame_sign{
+    display: flex;
+    justify-content: center;
+    margin: 12rem 10rem;
+    height: 40%;
+}
+
+.frame_sign #photo{
+    padding: 7%;
+    background-color: #fff;
+    /* height: 150%; */
+    border-radius: 20px 0px 0px 20px;
+    border: 2px 2px 2px 0px solid;
+    box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1);
+
+}
+
+.frame_sign #photo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+#info {
+    padding: 2rem;
+    background-color: #0b092b;
+    width: 36%;
+    color: #fff;
+    border: 2px 0px 2px 2px solid;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1), rgba(159, 178, 255, 0.727) 0px 2px 4px 0px inset;
+
+}
+
+#info H1{
+    color: #fff;
+    font-weight: 900;
+    text-shadow: 0 0px 25px #5A68FF;
+}
+
+#info p{
+    margin-bottom: 2%;
+}
+
+#submitSign{
+    margin-top: 6.5%;
+}
+
+.frame_sign #info div{
+    text-align: center;
+    /* margin-bottom: 2rem; */
+}
+
+.frame_sign #info form input{
+    padding: 0.5rem;
+    border: 2px solid;
+    border-radius: 30px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    
+}
+
+.frame_sign #info form input:hover{
+    transform: translateY(-3px);
+}
+
+.frame_sign #info form #submitSign, .frame_sign #info form #submitForGotpass{
+    cursor: pointer;
+    background-color: #5A68FF;
+    color: #fff;
+    border-color: #5A68FF;
+}
+
+
+.ask_sign a{
+    cursor: pointer;
+    color: gray;
+
+}
+
+.ask_sign #showpass input[type="checkbox"]{
+    max-width: 1rem;
+    cursor: pointer;
+}
+
+.ask_sign #showpass{
+    display: flex;
+    min-width: 130px;
+}
+
+.ask_sign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.frame_sign input{
+    background-color: #97a6e445;
+    color: #fff;
+    border: 1px solid rgb(96, 101, 232) !important;
+}
+
+
+@media (max-width: 950px){
+    .frame_sign{
+        margin-top: 40%;
+        /* margin: 4rem; */
+    }
+    .frame_sign #photo{
+        display: none;
+    }
+    .frame_sign #info{
+        /* margin: 1rem; */
+        border-radius: 20px !important;
+        min-width: 250px;
+     
+    }
+
+}
+
+
+
+
+
+
+/* .frame_sign{
+    display: flex;
+    justify-content: center;
+    margin: 12rem 10rem;
+
+}
+
+@media (max-width: 950px){
+    .frame_sign{
+        margin: 4rem;
+    }
+    .frame_sign #photo{
+        display: none;
+    }
+    .frame_sign #info{
+        margin: 1rem;
+        border-radius: 6px !important;
+        
+    }
+
+}
+
+.frame_sign #photo{
+    padding: 1rem;
+    background-color: #fff;
+    width: 32rem;
+    height: 33rem;
+    border-radius: 20px 0px 0px 20px;
+    border: 2px 2px 2px 0px solid;
+    box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1);
+
+}
+
+.frame_sign #photo img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.frame_sign #info{
+    box-shadow: -2px 1px 7px 7px rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    background-color: #1E1E1E;
+    width: 32rem;
+    height: 31rem;
+    color: #fff;
+    border: 2px 0px 2px 2px solid;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frame_sign #info div{
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.frame_sign #info form input{
+    padding: 0.5rem;
+    border: 2px solid;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    
+    
+}
+
+.frame_sign #info form #submitSign{
+    cursor: pointer;
+    background-color: #5A68FF;
+    color: #fff;
+    border-color: #5A68FF;
+    margin: 1rem 0rem;
+}
+
+.frame_sign #info form #submitForGotpass{
+    cursor: pointer;
+    background-color: #5A68FF;
+    color: #fff;
+    border-color: #5A68FF;
+}
+
+
+.ask_sign a{
+    cursor: pointer;
+    color: gray;
+
+}
+
+.ask_sign #showpass input[type="checkbox"]{
+    max-width: 1rem;
+    cursor: pointer;
+}
+
+.ask_sign #showpass{
+    display: flex;
+    min-width: 130px;
+}
+
+.ask_sign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.frame_sign input{
+    background-color: #404040;
+    color: #fff;
+    border: 1px solid black !important;
+}
+ */

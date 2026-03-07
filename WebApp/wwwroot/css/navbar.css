@@ -1,0 +1,184 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: 
+        radial-gradient(circle at 75% 50%, rgba(91,124,250,0.4), transparent 40%),
+        linear-gradient(90deg, #12002b 0%, #1b1464 40%, #1f2b8f 70%, #273a86 100%);
+}
+
+.navbar {
+  background-color: #0b092b;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo a img{
+  width: 60px;
+  height: 60px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+  font-weight: 700;
+  transition: 0.3s ease;
+}
+
+.menu a:hover {
+  color: rgb(145, 167, 255);
+  text-shadow: 0 0px 25px #5A68FF;
+  font-weight: 700;
+}
+
+.menu a.active{
+  color: rgb(145, 167, 255);
+  text-shadow: 0 0px 25px #5A68FF;
+  font-weight: 700;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.auth-buttons a{
+  text-decoration: none;
+}
+
+.btn-signin {
+  border: 1px solid white;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  background: transparent;
+  font-weight: 500;
+  
+}
+
+.btn-signin:hover {
+  color: white;
+  background: #5b7cfa;
+  border: 1px solid #5b7cfa;
+}
+
+.btn-register {
+  background-color: white;
+  color: #0b092b;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-register a{
+    color: #0b092b;
+}
+
+.btn-register:hover {
+  transform: translateY(-3px);
+  color: #5b7cfa;
+  box-shadow: 0 0px 40px rgba(93, 47, 232, 0.678);
+}
+
+.menu {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu_icon{
+  display: none;
+  
+}
+
+#check_nav{
+  display: none;
+}
+
+@media (max-width: 768px){
+  .menu_icon{
+    display: block;
+    color: #ccc;
+    transition: color 0.3s;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+  }
+
+  #check_nav:checked~.menu_icon #open{
+    display: none;
+    
+  }
+
+  .menu_icon #close{
+    display: none;
+  }
+
+  #check_nav:checked~.menu_icon #close{
+    display: block;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    background-color: #0b092b;
+    top: 100%;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    height: 0;
+    padding: 0;
+    transition: .1s ease;
+  }
+ 
+  .menu{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .auth-buttons{
+    overflow: hidden;
+    
+  }
+
+  #check_nav:checked~.nav-links{
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  
+}

@@ -1,0 +1,112 @@
+.addQuestionContainer{
+    background:rgba(0,0,0,0.6);
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxQuestion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 20px 20px;
+    background-color: #2c2c2c;
+    color: white;
+    padding: 1%;
+}
+.footerAddQuestion{
+    display: flex;
+    justify-content: end;
+    gap: 7%;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.footerAddQuestion input{
+    width: 50%;
+
+}
+
+.showQuestionButton{
+    margin-top: 5%;
+    padding: 1%;
+    padding-inline: 2%;
+    font-size: 18px;
+    background-color: #f0d801;
+    border: solid black 2px;
+    border-radius: 20px 20px;
+    cursor: pointer;
+}
+
+
+#backAddQuestion{
+    padding: 1%;
+    font-size: 18px;
+    border: solid black 2px;
+    border-radius: 20px 20px;
+    padding-inline: 2%;
+}
+#doneShowQuestion{
+    padding: 1%;
+    padding-inline: 2%;
+    font-size: 18px;
+    background-color: #5A68FF;
+    border: solid black 2px;
+    border-radius: 20px 20px;
+}
+
+#submitAddQuestion{
+    padding: 1%;
+    padding-inline: 2%;
+    font-size: 18px;
+    background-color: #5A68FF;
+    border: solid black 2px;
+    border-radius: 20px 20px;    
+}
+
+.formQuestion textarea{
+    background-color: #131313;
+    border: solid black 1px;
+    height: 50%;
+    resize: none; 
+    color: white;
+}
+
+#boxAddQuestion{
+
+    height: clamp(20vw,20vw,301.42);
+    width: clamp(20vw,20vw,301.42) ;
+}
+
+.showQuestions{
+    height: clamp(20vw,150px,150px);
+    width: 300px ;
+    overflow-y: auto;
+}
+
+#showQuestions::-webkit-scrollbar {
+    width: 3px;
+}
+
+#showQuestions::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+    border-radius: 10px;
+}
+
+.footerShowQuestion{
+    display: flex;
+    justify-content: end;
+    gap: 7%;
+    width: 100%;
+    margin-top: 8%;
+}
+
+.footerShowQuestion input{
+    width: 30%;
+}

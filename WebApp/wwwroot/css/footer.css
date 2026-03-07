@@ -1,0 +1,74 @@
+.main_footer{
+    width: 100%;
+    height: fit-content;
+    background-color: #1a1a1a;
+    color: rgba(255, 255, 255, 0.467);
+    padding-bottom: 1rem;
+
+    
+}
+
+.team_member{
+    display: grid;
+    grid-template-columns: repeat(6, minmax(200px, 1fr));
+    place-items: center;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.course_info{
+    text-align: center;
+    justify-content: center;
+}
+
+.course_info h2{
+    padding-top: 2rem;
+    margin: 0;
+    font-weight: 400;
+}
+.course_info h3{
+    padding: 1.25rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.course_info p{
+    padding-top: 0.5rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+#member img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgba(42, 22, 113, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(169, 169, 169, 0.2) 0px 2px 4px 0px inset;
+}
+
+#member{
+    display: flex;
+    gap: 1rem;
+}
+
+.member-detail .id{
+    margin: 0.25rem 0rem 1rem 0rem;
+    font-weight: 350;
+}
+
+.member-detail .name{
+    margin: 0;
+    font-weight: 350;
+}
+
+@media (max-width: 1350px){
+    .team_member{
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 765px){
+    .team_member{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../styles/navbar.css">
+    <link rel="stylesheet" href="/css/pages/sign_up.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    </nav>
+    <div class="frame_sign">
+        <div id="photo">
+            <img src="https://images-ext-1.discordapp.net/external/P8bEa27gVk0UTXe15YVbGyHmMtQBFaI7vDD3I9C7UrE/https/cdni.iconscout.com/illustration/premium/thumb/man-doing-online-registration-illustration-svg-download-png-11538642.png?format=webp&quality=lossless&width=578&height=563" alt="sign-up">
+        </div>
+        <div id="info">
+            <div>
+                <H1>Sign Up</H1>
+            </div>
+            <form action="" method="post">
+                <p>Username</p>    
+                <input id="username" name="username" type="text" placeholder="Enter your username" required>
+                <p>Email</p>
+                <input id="email" name="email" type="email" placeholder="xxx@gmail.com" required>
+                <p>Password</p>
+                <input id="password" name="password" type="text" placeholder="Enter your password" required>
+                <p>Phone Number </p>
+                <input id="phone" name="phone" type="tel" placeholder="08xxxxxxxx" pattern="[0-9]{3}-[0-9]{7}" required>
+                <p></p>
+                <input id="submitSign" type="submit" value="Join Us">
+            </form>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
+
+    <script type="module">
+        import { generatedNavbar } from "/js/navbar.js";
+        import { generatedFooter } from "/js/footer.js";
+        generatedNavbar(false);
+        generatedFooter();
+    </script>
+</body>
+</html>

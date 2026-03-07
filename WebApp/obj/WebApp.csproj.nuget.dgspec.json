@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Victus\\Desktop\\mvc_webapp\\WebApp\\WebApp.csproj": {}
+    "D:\\code\\University\\Year_2\\2\\WebApp\\project\\fontend\\WebApp-Project\\WebApp\\WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Victus\\Desktop\\mvc_webapp\\WebApp\\WebApp.csproj": {
+    "D:\\code\\University\\Year_2\\2\\WebApp\\project\\fontend\\WebApp-Project\\WebApp\\WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Victus\\Desktop\\mvc_webapp\\WebApp\\WebApp.csproj",
+        "projectUniqueName": "D:\\code\\University\\Year_2\\2\\WebApp\\project\\fontend\\WebApp-Project\\WebApp\\WebApp.csproj",
         "projectName": "WebApp",
-        "projectPath": "C:\\Users\\Victus\\Desktop\\mvc_webapp\\WebApp\\WebApp.csproj",
-        "packagesPath": "C:\\Users\\Victus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Victus\\Desktop\\mvc_webapp\\WebApp\\obj\\",
+        "projectPath": "D:\\code\\University\\Year_2\\2\\WebApp\\project\\fontend\\WebApp-Project\\WebApp\\WebApp.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\University\\Year_2\\2\\WebApp\\project\\fontend\\WebApp-Project\\WebApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Victus\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.102/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
