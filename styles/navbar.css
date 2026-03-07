@@ -2,9 +2,9 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  /* background: 
+  background: 
         radial-gradient(circle at 75% 50%, rgba(91,124,250,0.4), transparent 40%),
-        linear-gradient(90deg, #12002b 0%, #1b1464 40%, #1f2b8f 70%, #273a86 100%); */
+        linear-gradient(90deg, #12002b 0%, #1b1464 40%, #1f2b8f 70%, #273a86 100%);
 }
 
 .navbar {
