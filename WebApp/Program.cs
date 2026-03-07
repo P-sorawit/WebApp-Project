@@ -1,4 +1,4 @@
-using Webapp.Controllers;
+using WebApp.Controllers;
 using Microsoft.EntityFrameworkCore;
 using WebApp.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -13,7 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/authen/Sign_in"; // เส้นทางไปยังหน้าล็อกอิน
+        options.LoginPath = "/authen/SignIn"; // เส้นทางไปยังหน้าล็อกอิน
     });
 
 var app = builder.Build();
