@@ -56,7 +56,7 @@ export function haddleMakePost(){
                     <h3>Description</h3>
                     <textarea placeholder="Description" rows="4" cols="50" id="descInput"></textarea>
                     <label for="qrInput" class="uploadQrBtn">
-                        Choose group QR code image
+                        Upload your QR code group image
                     </label>
                     <input type="file" id="qrInput" accept="image/*" / hidden>
                 </div>
