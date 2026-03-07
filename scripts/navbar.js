@@ -47,8 +47,8 @@ export function generatedNavbar(isLogin) {
                         <ul class="menu">
                             <li><a href="../post/post.html">Post</a></li>
                             <li><a href="../my-activity/my-activity.html">My activity</a></li>
-                            <li><a id ="notificationsButton" href="">Notification</a></li>
                             <li><a href="../profile/profile.html">Profile</a></li>
+                            <li><a id ="notificationsButton">Notification</a></li>
                             <li><a href="../main_guest/main_guest.html">Log out</a></li>
                         </ul>
                     </div>
@@ -80,8 +80,8 @@ export function generatedNavbar(isLogin) {
                 <ul class="menu">
                     <li><a href="#">Post</a></li>
                     <li><a href="#">My activity</a></li>
-                    <li><a href="#">Notification</a></li>
                     <li><a href="#">Profile</a></li>
+                    <li><a href="#">Notification</a></li>
                 </ul>
                 <br>
                 <div class="auth-buttons">
