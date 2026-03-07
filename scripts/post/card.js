@@ -82,6 +82,94 @@ export function Card({ title, description, image, owner, members, category, size
   }
 
   const button = card.querySelector(".btn-enroll")
+  const answerContainer = document.getElementById("answerContainer")
+
+  button.addEventListener('click', () => {
+
+    answerContainer.style.display = "flex"
+
+    let index = 0
+
+    const mockQuestion = [
+      { question: "อิอิ1" },
+      { question: "อิอิ2" },
+      { question: "อิอิ3" },
+      { question: "อิอิ4" },
+    ]
+    let answers = new Array(mockQuestion.length).fill("")
+    function renderQuestion() {
+
+      const isFirst = index === 0
+      const isLast = index === mockQuestion.length - 1
+
+      answerContainer.innerHTML = `
+        <div class="boxAnswer" id="boxAnswer">
+
+          <div class="questionProgress">
+            ${index + 1} / ${mockQuestion.length}
+          </div>
+          <div>
+            <h3>Question ${index+1} : ${mockQuestion[index].question}</h3>
+
+            <div id="formAnswer" class="formAnswer">
+              <textarea rows="9" cols="30" id="Answer" name="Answer">${answers[index]}</textarea>
+            </div>
+
+            <div class="footerAnswer">
+              ${!isFirst ? `<input type="button" value="Back" id="backAnswer">` : `<span></span>`}
+              <input type="button" value="${isLast ? "Done" : "Next"}" id="nextAnswer">
+            </div>
+          </div>
+        </div>
+      `
+
+      const boxAnswer = document.getElementById("boxAnswer")
+      boxAnswer.addEventListener("click", (e) => {
+        e.stopPropagation()
+      })
+
+      const backBtn = document.getElementById("backAnswer")
+      const nextBtn = document.getElementById("nextAnswer")
+
+      if (backBtn) {
+        backBtn.addEventListener("click", () => {
+
+          const textarea = document.getElementById("Answer")
+
+          // save answer
+          answers[index] = textarea.value
+
+          index--
+          renderQuestion()
+
+        })
+      }
+
+      nextBtn.addEventListener("click", () => {
+
+        const textarea = document.getElementById("Answer")
+
+        // save answer
+        answers[index] = textarea.value
+
+        if (isLast) {
+          console.log("All Answers:", answers)
+          answerContainer.style.display = "none"
+          return
+        }
+
+        index++
+        renderQuestion()
+
+      })
+    }
+
+    renderQuestion()
+  })
+
+  answerContainer.addEventListener('click', () => {
+    answerContainer.style.display = "none"
+  })
 
   return card;
 }

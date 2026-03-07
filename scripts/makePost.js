@@ -37,7 +37,7 @@ export function haddleMakePost(){
                     <input type="file" id="fileInput" accept="image/*" />
                     <div>
                         <label>Tag :</label>
-                        <select name="tag">
+                        <select name="tag" id="tagSelect">
                             <option value="" selected disabled>Select tag</option>
                             <option value="th">Sport</option>
                             <option value="jp">Party</option>
@@ -52,9 +52,13 @@ export function haddleMakePost(){
                 </div>
                 <div class="fillInput2MakePost">
                     <h3>Title</h3>
-                    <input type="text" placeholder="Title">
+                    <input type="text" placeholder="Title" id="titleInput">
                     <h3>Description</h3>
-                    <textarea placeholder="Description" rows="4" cols="50"></textarea>
+                    <textarea placeholder="Description" rows="4" cols="50" id="descInput"></textarea>
+                    <label for="qrInput" class="uploadQrBtn">
+                        Upload your QR code group image
+                    </label>
+                    <input type="file" id="qrInput" accept="image/*" / hidden>
                 </div>
                 
             </div>
@@ -64,6 +68,25 @@ export function haddleMakePost(){
             </div>
             <div class=addQuestionContainer id="addQuestionContainer">
         </form>`
+
+        const inputQR = document.getElementById("qrInput")
+        const label = document.querySelector(".uploadQrBtn")
+        inputQR.addEventListener("change", () => {
+            const file = inputQR.files[0]
+            if(!file) return
+
+            const name = file.name
+            const ext = name.split(".").pop()
+
+            let base = name.replace("." + ext, "")
+
+            if(base.length > 18){
+                base = base.substring(0,18) + "... "
+            }
+
+            label.textContent = base + "." + ext
+        })
+
         const backButton = document.getElementById("backMakePost")
         backButton.addEventListener("click",()=>{
             isShowing = false
@@ -187,6 +210,85 @@ export function haddleMakePost(){
         linkQuestion.href = "../../styles/addQuestion.css"
         linkQuestion.rel = "stylesheet"
         document.querySelector("head").appendChild(linkQuestion)
+
+        const form = document.getElementById("boxMakePost")
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault()
+
+            const title = document.getElementById("titleInput").value.trim()
+            const description = document.getElementById("descInput").value.trim()
+            const tag = document.getElementById("tagSelect").value
+
+            const photo = fileInput.files[0]
+            const qrImage = inputQR.files[0]
+
+            if(title.length < 5){
+                alert("Title must be longer than 5 characters")
+                return
+            }
+
+            if(description.length < 5){
+                alert("Description must be longer than 5 characters")
+                return
+            }
+
+            if(!tag){
+                alert("Please select a tag")
+                return
+            }
+
+            if(!photo){
+                alert("Please upload a photo")
+                return
+            }
+
+            if(!qrImage){
+                alert("Please upload a QR image")
+                return
+            }
+
+            const allowedTypes = ["image/jpeg","image/png"]
+
+            if(!allowedTypes.includes(photo.type)){
+                alert("Photo must be JPG or PNG")
+                return
+            }
+
+            if(!allowedTypes.includes(qrImage.type)){
+                alert("QR image must be JPG or PNG")
+                return
+            }
+
+
+            const formData = new FormData()
+
+            formData.append("title",title)
+            formData.append("description",description)
+            formData.append("tag",tag)
+            formData.append("photo",photo)
+            formData.append("qr",qrImage)
+            formData.append("questions",JSON.stringify(questions))
+
+            console.log("Ready to send")
+            console.log(formData)
+
+            // try{
+            //     const res = await fetch("http://localhost:3000/posts",{
+            //         method:"POST",
+            //         body: formData
+            //     })
+
+            //     const data = await res.json()
+
+            //     console.log("Server:",data)
+
+            // }catch(err){
+            //     console.error(err)
+            // }
+
+        })
+
+
     })
 
 

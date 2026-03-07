@@ -64,6 +64,12 @@ body {
   font-weight: 700;
 }
 
+.menu a.active{
+  color: rgb(145, 167, 255);
+  text-shadow: 0 0px 25px #5A68FF;
+  font-weight: 700;
+}
+
 .auth-buttons {
   display: flex;
   gap: 0.75rem;
