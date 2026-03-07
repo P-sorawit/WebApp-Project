@@ -83,40 +83,80 @@ export function Card({ title, description, image, owner, members, category, size
 
   const button = card.querySelector(".btn-enroll")
   const answerContainer = document.getElementById("answerContainer")
-  button.addEventListener('click',()=>{
-    answerContainer.style.display="flex"
-    let index = 0
-    const mockQuestion =[
-      {
-        question:"อิอิ1"
-      },
-      {
-        question:"อิอิ2"
-      },
-      {
-        question:"อิอิ3"
-      },
-      {
-        question:"อิอิ4"
-      },
-    ]
-    answerContainer.innerHTML = `
-            <div class="boxQuestion" id="boxAddQuestion">
-                <div>
-                    <h3>Question</h3>
-                    <div id="formQuestion" class="formQuestion">
-                        <textarea  rows="9" cols="30" id="question" name="question"></textarea>
 
-                    </div>
-                    <div class="footerAddQuestion">
-                        <input type="button" value="Back" id="backAddQuestion">
-                        <input type="button" value="Add" id="submitAddQuestion">
-                    </div>
-                </div>    
-            </div>`
+  button.addEventListener('click', () => {
+
+    answerContainer.style.display = "flex"
+
+    let index = 0
+
+    const mockQuestion = [
+      { question: "อิอิ1" },
+      { question: "อิอิ2" },
+      { question: "อิอิ3" },
+      { question: "อิอิ4" },
+    ]
+
+    function renderQuestion() {
+
+      const isFirst = index === 0
+      const isLast = index === mockQuestion.length - 1
+
+      answerContainer.innerHTML = `
+        <div class="boxAnswer" id="boxAnswer">
+
+          <div class="questionProgress">
+            ${index + 1} / ${mockQuestion.length}
+          </div>
+          <div>
+            <h3>Question ${index+1} : ${mockQuestion[index].question}</h3>
+
+            <div id="formAnswer" class="formAnswer">
+              <textarea rows="9" cols="50" id="Answer" name="Answer"></textarea>
+            </div>
+
+            <div class="footerAnswer">
+              ${!isFirst ? `<input type="button" value="Back" id="backAnswer">` : `<span></span>`}
+              <input type="button" value="${isLast ? "Done" : "Next"}" id="nextAnswer">
+            </div>
+          </div>
+        </div>
+      `
+
+      const boxAnswer = document.getElementById("boxAnswer")
+      boxAnswer.addEventListener("click", (e) => {
+        e.stopPropagation()
+      })
+
+      const backBtn = document.getElementById("backAnswer")
+      const nextBtn = document.getElementById("nextAnswer")
+
+      if (backBtn) {
+        backBtn.addEventListener("click", () => {
+          index--
+          renderQuestion()
+        })
+      }
+
+      nextBtn.addEventListener("click", () => {
+
+        if (isLast) {
+          console.log("DONE")
+          answerContainer.style.display = "none"
+          return
+        }
+
+        index++
+        renderQuestion()
+      })
+    }
+
+    renderQuestion()
   })
-  answerContainer.addEventListener('click',()=>{
-    answerContainer.style.display="None"
+
+  answerContainer.addEventListener('click', () => {
+    answerContainer.style.display = "none"
   })
+
   return card;
 }
